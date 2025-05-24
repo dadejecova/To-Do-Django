@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
 def home(request):
-    return HttpResponse('Hello, world! This is the home page of the Todo app.')
+    return render(request, 'home.html')
