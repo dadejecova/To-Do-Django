@@ -1,5 +1,8 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render, redirect
+from .models import Task
 
 # Create your views here.
 def addTask(request):
-    return HttpResponse("Form Submitted Successfully")
+    task = request.POST['task']
+    Task.objects.create(title=task)
+    return redirect('home')
