@@ -1,3 +1,3 @@
 To Do App using Django
 
-07 - 02
+07 - 05
